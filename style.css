@@ -13,10 +13,19 @@
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
-	
+	float:right;
 	background-image: url(https://images.theconversation.com/files/393210/original/file-20210401-13-z6rl6z.jpg?ixlib=rb-1.1.0&rect=9%2C0%2C2994%2C1999&q=45&auto=format&w=496&fit=clip);
+margin-left: 60px;
+
+
 }
 
+.container {
+	display: grid;
+	grid-template-columns: 100px 100px; 
+	grid-template-rows: 100px;
+	grid-column-gap: 5px;
+  }
 h2
 {
 	background: #337ab7;

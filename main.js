@@ -1,6 +1,7 @@
 
 var canvas = new fabric.Canvas('myCanvas');
-
+var characters= ["girl.png","boy2.gif","boy.gif","girl2.gif"];
+var c = 0;
 player_x = 10;
 player_y = 10;
 
@@ -9,10 +10,21 @@ block_image_height = 30;
 
 var player_object= "";
 var block_image_object= "";
+function next(){
+c = c+1;
+if (c == 4){
+c=0;
 
+
+}
+player_update()
+
+
+
+}
 function player_update()
 {
-	fabric.Image.fromURL("girl.png", function(Img) {
+	fabric.Image.fromURL(characters[c], function(Img) {
 	player_object = Img;
 
 	player_object.scaleToWidth(150);

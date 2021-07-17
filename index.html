@@ -18,16 +18,20 @@
 
 	<h2 class="btn-primary">Design Your World</h2>
 
-
-	<div class= "container">
+	<div class= "container" >
 		<div class="canvas">
+			
 		<canvas id="myCanvas" height="500" width="800"></canvas>
 		
 	</div>
+	
 </center>
+<div class="btn-primary" style="width: 200px; border-radius: 25px; float: right; margin-right: 15px; margin-top: 50px; text-align: center;">
+	<h4 >Current Width  = <span id="current_width" >30</span></h4>
+	<h4 >Current Height  = <span id="current_height">30</span></h4>
+</div>
 
-
-	<div class="i" style="margin-left: 10px; margin: bottom 500px; background-color: red; width: 150px; text-align: center; border-radius: 25px; color:white;">
+	<div class="i" style="margin-left: 10px; margin-top:-80px; background-color: red; width: 150px; text-align: center; border-radius: 25px; color:white;">
 	<script src="main.js"></script>
 	<h3>Instructions</h3>
 	<h6 >arrow keys to move</h6>
@@ -41,8 +45,12 @@
 	<h6>u for shiny block</h6>
 	<h6>c for stone</h6>
 	<h6>s for cloud</h6>
+	<h6>shift+p to increase block size</h6>
+	<h6>shift+m to decrease block size</h6>
 	<button style="background-color: red; border-color: red; border-radius: 25px;" onclick="next()">Next Character</button>
 	<br>
+	
+
 </div>
 </div>
 </body>
